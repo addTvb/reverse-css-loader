@@ -1,0 +1,54 @@
+:root {
+	--text-gray: #575757;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@keyframes spinBack {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-720deg);
+	}
+}
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #000;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+.triple-loader {
+	position: relative;
+	height: 100px;
+	width: 100px;
+	border: 4px solid transparent;
+	border-top-color: var(--text-gray);
+	border-left-color: #fff;
+	border-radius: 50%;
+	animation: spin 1.5s linear infinite;
+}
+.triple-loader::before {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	content: '';
+	border: 4px solid transparent;
+	border-top-color: #fff;
+	border-left-color: var(--text-gray);
+	border-radius: 50%;
+	animation: spinBack 1.2s linear infinite;
+}
