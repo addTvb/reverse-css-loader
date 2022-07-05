@@ -2,4 +2,4 @@
 Reverse loader animated with @keyframes
 
 
-https://www.figma.com/file/KFlztHZJ4hoT1U67DJtXGK/deliery-trans?node-id=0%3A1
+https://www.figma.com/file/j59bADvreEPRFaALg2s1Lf/Untitled?node-id=1%3A3
